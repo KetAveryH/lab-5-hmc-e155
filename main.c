@@ -92,6 +92,7 @@ int main(void) {
 
         if (rotating == 0) {
           RPS = 0.0f;
+          printf("Rotations Per Second: %f \n", RPS);
         } else {
           if (direction == 1) {
 
@@ -99,8 +100,8 @@ int main(void) {
               RPS = (((float) 2.0f / 120.0f) / (float) MSCOUNT) * 1000.0f;
             }
 
-            printf("B_INTR_COUNT %d\n", B_INTR_COUNT);
-            printf("Rotations Per Second: %fl \n", RPS);
+            //printf("B_INTR_COUNT %d\n", B_INTR_COUNT);
+            printf("Rotations Per Second: %f Counter-Clockwise \n", RPS);
           }
           if (direction == -1) {
 
@@ -108,7 +109,7 @@ int main(void) {
               RPS = (((float) 2.0f / 120.0f) / (float) MSCOUNT) * 1000.0f;
             }
 
-            printf("Rotations Per Second: %fl \n", RPS);
+            printf("Rotations Per Second: %f Clockwise \n", RPS);
           } 
         }
       
